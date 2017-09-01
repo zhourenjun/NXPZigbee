@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:text="标题"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_hint"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_error_red_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img"
+            android:gravity="center_vertical"
+            android:text="@string/activity_add_gateway_wifi_hint"
+            android:textColor="@color/red"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="@string/activity_add_gateway_pwd_hint"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WIFI"
+            android:maxLines="1"
+            tools:text="TP_Link"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <com.longhorn.telinkmesh.ui.view.RoundButton
+        android:id="@+id/bt_go"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:text="@string/activity_add_gateway_config"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:btnCornerRadius="10dp"
+        app:btnPressedRatio="0.9"
+        app:btnSolidColor="@color/colorPrimary"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_skip"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/activity_add_gateway_skip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_toRightOf="@id/tv"
+            app:srcCompat="@drawable/ic_chevron_right_gray_24dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

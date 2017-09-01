@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NXPZigbee</string>
+    <string name="title_home" >Home</string>
+    <string name="title_group" >Group</string>
+    <string name="title_me" >Me</string>
+    <string name="cancel" >cancel</string>
+    <string name="sure" >sure</string>
+    <string name="hint" >hint</string>
+    <string name="permission" >The current application is missing the necessary permissions, which are temporarily unavailable. If necessary, click the [OK] button to go to the Settings Center for authorization.</string>
+    <string name="title_device" >Device</string>
+    <string name="add_device">add device</string>
+    <string name="title_light" >light</string>
+    <string name="title_plug" >plug</string>
+    <string name="title_sensor">sensor</string>
+    <string name="menu_open" >all open</string>
+    <string name="menu_close" >all close</string>
+    <string name="gateway_setting" >gateway setting</string>
+    <string name="activity_splash">Experience intelligent technology, enjoy the enjoyment of human family</string>
+    <string name="activity_add_gateway_wifi_hint">Please connect WIFI first</string>
+    <string name="activity_add_gateway_pwd_hint">Please enter the current WIFI password to configure the gateway to access the Internet</string>
+    <string name="prompt_password">password</string>
+    <string name="activity_add_gateway_config">A key configuration</string>
+    <string name="add_gateway">Add gateway</string>
+    <string name="activity_add_gateway_skip">skip</string>
+
+</resources>

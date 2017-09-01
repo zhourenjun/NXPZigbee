@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_renew"
+        android:icon="@drawable/ic_autorenew_white_24dp"
+        android:title="@string/add_device"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/toolbar_r_img"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        android:title=""
+        app:showAsAction="ifRoom">
+        <!-- item包含menu表示该menu是item下的子菜单 -->
+        <menu>
+            <!-- 将group中的菜单项放于一个组里面 -->
+            <group>
+                <item
+                    android:id="@+id/action_open"
+                    android:icon="@drawable/ic_open_black_24dp"
+                    android:title="@string/menu_open"
+                    app:showAsAction="ifRoom"/>
+                <item
+                    android:id="@+id/action_close"
+                    android:icon="@drawable/ic_close_black_24dp"
+                    android:title="@string/menu_close"
+                    app:showAsAction="ifRoom"/>
+                <item
+                    android:id="@+id/action_add"
+                    android:icon="@drawable/ic_add_black_24dp"
+                    android:title="@string/add_device"
+                    app:showAsAction="ifRoom"/>
+                <item
+                    android:id="@+id/action_gateway"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="@string/gateway_setting"
+                    app:showAsAction="ifRoom"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
